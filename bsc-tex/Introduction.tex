@@ -1,0 +1,13 @@
+\chapter*{Introduction}
+\addcontentsline{toc}{chapter}{\textbf{Introduction}}
+\label{introduction}
+
+\textbf{Patrolling} represents the repeated visit of certain places, over an area. The \emph{multi-robot patrolling} (also called \textit{multi-agent patrolling}) problem (MRP) consists in minimizing the time between two consecutive visits of the same place (called \emph{idleness}), using two or more robots. In the literature, this problem is generally considered to be NP-hard, while solutions often involve cyclic paths \cite{3,4}. Applications of the multi-agent patrolling problem include: surveillance tasks (e.g. anomaly detection, intruder detection), area coverage, data collection tasks (e.g. for the case of wireless sensor networks - WSNs), rescue operations (e.g. people or objects in dangerous situations) \cite{1,2}. 
+
+
+A major challenge when deploying fleets of mobile robots in real scenarios/environments is  the ability of the robots to adapt to the complexity of their environment, that is its dynamics and uncertainty. In such dynamic environments the robots need to be able to provide robust solutions to complex tasks and to adapt to changes in their environment. The multi-agent patrolling task is intensively investigated within the multi-agent research community and various algorithms based on reactive and cognitive architectures have been introduced \cite{othmaniguibourg18}.
+
+This thesis offers solutions for optimizing data delivery in multi-robot network patrolling in the scenario where the environment is deterministic, the network of robots is centralized and offline and the robots have periodic meetings and also aims to prove that in a more general scenario of the multi-robot network patrolling, where the patrolling environment is non-deterministic and uncertain a \emph{reinforcement learning} approach is feasible. The problem was proposed in a bilateral collaboration between the MLYRE team from Cluj-Napoca coordinated by prof. Gabriela Czibula and the CHROMA team from Insa Lyon coordinated by prof. Olivier Simonin.
+
+\par The rest of the thesis is structured as follows. Chapter \ref{bck} presents the background concepts used in this thesis, while our Dynamic Network Flows algorithm is outlined in Chapter \ref{flow}. Chapter \ref{rl} is concerned with proving that a \emph{reinforcement learning} approach is feasible and a detailed software solution is presented in  Chapter \ref{softwareApplication}. \\
+The conclusions of our thesis and directions to further continue and improve our research are given in Section \ref{conclus}.

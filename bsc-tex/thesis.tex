@@ -1,0 +1,225 @@
+\documentclass[a4paper, 12pt]{report}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{latexsym}
+\usepackage{morefloats}
+\usepackage{color}
+%\usepackage{enumitem}
+\usepackage{verbatim}
+\usepackage{xcolor,colortbl}
+\usepackage{amssymb}
+\usepackage{caption}
+\usepackage{mathtools}
+\usepackage{cleveref}
+\usepackage{amssymb}
+\usepackage{footnote}
+\usepackage{graphicx}
+\usepackage{indentfirst}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{capt-of}
+\usepackage{multirow}
+\usepackage{xcolor}
+\usepackage{listings,xcolor}
+\usepackage{float}
+\usepackage{subcaption} 
+\usepackage{algorithm}
+\usepackage{algpseudocode} 
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{kpfonts}
+\usepackage{amsmath}
+\usepackage{datetime}
+\newdateformat{specialdate}{\twodigit{\THEDAY}-\twodigit{\THEMONTH}-\twodigit{\THEYEAR}}
+\usepackage{nomencl}
+\makenomenclature
+\renewcommand{\nomname}{Summary of notation}
+\nomenclature{$c$}{Speed of light} %ADD MORE NOTATIONS HERE
+\hypersetup{colorlinks,linkcolor=black,citecolor=blue}
+
+\linespread{1.1}
+
+\newtheorem{definition} {Definition}
+
+\geometry{a4paper,top=3cm,left=3cm,right=2.5cm,bottom=2cm}
+
+\pagestyle{headings}
+\begin{document}
+
+
+% RO
+ 
+ \begin{titlepage}
+ 
+\sloppy
+\begin{center}
+\Large{UNIVERSITATEA BABE\c{S}-BOLYAI}\\
+\vspace{0.2cm}
+\Large{FACULTATEA DE MATEMATIC\u A \c SI INFORMATIC\u A}\\
+\vspace{0.2cm}
+\Large{SPECIALIZAREA INFORMATIC\u A}\\
+\end{center}
+
+\vspace{3.5 cm}
+\begin{center}
+\Huge \textbf{LUCRARE DE LICEN\c T\u A}\\
+\vspace{1 cm}
+
+\huge \textbf{Optimizarea transmiterii datelor \^ in patrularea cu re\c tele multi-robot}
+\end{center}
+
+\vspace{3.5cm}
+
+\begin{flushleft}
+\Large{\textbf{Coordonator \c stiin\c tific}}\\
+\Large{\textbf{Prof. dr. Czibula Gabriela}}
+\end{flushleft}
+
+\vspace{2.5cm}
+
+\begin{flushright}
+\Large{\textbf{Student}}\\
+\Large{\textbf{B\u adi\c t\u a Marin-Georgian}}
+\end{flushright}
+
+\vspace{1 cm}
+\begin{center}
+\Large{2020}
+\end{center}
+
+\end{titlepage}
+
+%EN
+\begin{titlepage}
+\sloppy
+\begin{center}
+\Large{BABE\c{S}-BOLYAI UNIVERSITY}
+
+\Large{FACULTY OF MATHEMATICS AND COMPUTER SCIENCE}
+\end{center}
+\vspace{3.5 cm}
+\begin{center}
+\Huge \textbf{DIPLOMA THESIS}\\
+\vspace{1 cm}
+
+\huge \textbf{Data Delivery Optimization in Multi-Robot Network Patrolling}
+\end{center}
+
+\vspace{3.5cm}
+
+\begin{flushleft}
+\Large{\textbf{Scientific supervisor}}\\
+\Large{\textbf{Prof. dr. Czibula Gabriela}}
+\end{flushleft}
+
+\vspace{1.5cm}
+
+\begin{flushright}
+\Large{\textbf{Student}}\\
+\Large{\textbf{B\u adi\c t\u a Marin-Georgian}}
+\end{flushright}
+
+
+\vspace{2cm}
+\begin{center}
+\Large{2020}
+\end{center}
+
+\end{titlepage}
+
+\begin{abstract}
+\par The subject of this thesis is the domain of Multi-Robot Patrolling (MRP). This thesis tackles a specific problem in the MRP called Data Delivery Optimization in Multi-Robot Network Patrolling. The MRP is a new research field with high potential for massive discoveries.
+\par The thesis is structured in four chapters. In the first chapter some of the main concepts about multi-robot patrolling and reinforcement learning are introduced, while also reviewing the current literature about MRP. In the second chapter a novel approach to the Data Delivery Optimization problem, based the on a Dynamic Network Flows algorithm, is discussed, called \emph{DynFloR}. The following chapter aims to prove that a reinforcement learning approach to the problem is highly feasible, by introducing and testing a Q-learning model. The last chapter presents the software solution which solves the Data Delivery Optimization problem, providing details of the software development methodology used and implementation details.
+\par The main elements of originality of this thesis consist in two new approaches to the problem, one based on Dynamic Network Flows (\emph{DynFloR}) and another one based on Reinforcement Learning (\emph{DronemRL}). A further original contribution consists in creating and designing the application showcased in the last chapter, as to the best of my knowledge there exists no application for creating, training and testing MRP environments publicly available.
+\par This work is the result of my own activity. I have neither given nor received unauthorized assistance on this work.
+
+
+\begin{flushright}
+
+B\u{a}di\c{t}\u{a} Marin-Georgian
+\end{flushright}
+
+\begin{flushleft}
+Cluj-Napoca\\
+\specialdate\today
+\end{flushleft}
+\end{abstract}
+ 
+    
+\begin{comment}
+%Pentru bursa
+%
+%+Pagina engleza
+ \begin{titlepage}
+ 
+\sloppy
+\begin{center}
+\Large{UNIVERSITATEA BABE\c{S}-BOLYAI}\\
+\vspace{0.2cm}
+\Large{FACULTATEA DE MATEMATIC\u A \c SI INFORMATIC\u A}\\
+\vspace{0.2cm}
+\Large{SPECIALIZAREA INFORMATIC\u A}\\
+\end{center}
+
+\vspace{2.5 cm}
+\begin{center}
+\Huge \textbf{RAPORT FINAL BURS\u A}\\
+\vspace{1 cm}
+
+\huge \textbf{Optimizarea transmiterii datelor \^ in patrularea cu re\c tele multi-robot folosind \^ inv\u a\c tare prin \^int\u arire}
+\end{center}
+
+\vspace{2.5cm}
+
+\begin{flushleft}
+\Large{\textbf{Coordonator \c stiin\c tific}}\\
+\Large{\textbf{Prof. dr. Czibula Gabriela}}
+\end{flushleft}
+
+\vspace{0.5cm}
+
+\begin{flushright}
+\Large{\textbf{Student}}\\
+\Large{\textbf{B\u adi\c t\u a Marin-Georgian}}
+\end{flushright}
+
+\vspace{1 cm}
+\begin{center}
+\Large{2019}
+\end{center}
+
+\end{titlepage}
+
+\end{comment}
+
+\setstretch{1.25}
+\tableofcontents
+\listoffigures
+\listoftables
+\listofalgorithms
+\nopagebreak[0]
+
+
+\include{Introduction}
+
+\include {Publications}
+
+\include{Background}
+
+%\include{bursa}
+
+\include{Flow}
+
+\include{RL_approach}
+
+%\include{Gym_env}
+
+\include{Software}
+
+\include{Conclusions}
+
+\bibliographystyle{alpha}
+\bibliography{bib}
+
+\end{document}

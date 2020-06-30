@@ -1,0 +1,11 @@
+\chapter*{Conclusions}
+\addcontentsline{toc}{chapter}{\textbf{Conclusions}}
+\label{conclus}
+
+
+This thesis investigaes the data delivery optimization problem in a simplified setting  of the \emph{multi-robot patrolling} problem, in which the environment is deterministic. Accordingly a centralized and offline approach $DynFloR$ based on flows in dynamic networks was introduced. The goal of $DynFloR$ is to determine the robots' policy for maximizing  the quantity of data delivered to a base station in a given time, assuming that the robots are continuously collecting data during their patrolling. The more general aim of the research initiated in this thesis is to prove that a \emph{reinforcement learning} approach of the MRP problem is highly feasible, and that further research conducted in this direction could lead to impressive results. Therefore, we introduced a reinforcement learning approach $DronemRL$, which is an improvement of the foundation laid by $DynFloR$.
+
+More contributions have been made in this thesis by designing, implementing and documenting the \emph{Dronem Web} application, which to the best of my knowledge is the only application publicly available capable of modeling and training multi-robot patrolling environments. In order to create the application, a client-server architecture was designed;  the main libraries and frameworks used were:  OpenAI Gym, Django, Django Rest Framework, and ReactJS - ensuring a scalable architecture. I am confident that in the future, many reinforcement learning enthusiasts  will start using this application as a learning tool, because it is easy to use, intuitive and efficient. 
+
+Further work will extend the experimental evaluation and theoretical analysis of $DronemRL$ in order to better assess its performance. I also aim to decentralize the decision making process and to incorporate uncertainty in the communication between robots. In order to achieve these goals, a very refined Deep Q-learning perspective might be considered. 
+
